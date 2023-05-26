@@ -26,10 +26,16 @@ const autonbs = () => {
             <div className='col-span-4'>
                 <p>Project</p>
                 <h2>Overview</h2>
-                <p>
+                <p className='p-2 tracking-wide'>
                 Fusce condimentum rutrum condimentum. Aliquam tristique rutrum tellus sed venenatis. Pellentesque eget velit sem. Vestibulum rutrum turpis a ex luctus, eget dictum felis placerat. Fusce ac ex a sem interdum tristique. Nulla facilisi. Nunc tempor dapibus est ut feugiat. 
                 </p>
-                <button className='px-8 py-2 mt-4 mr-8'>Code</button>
+                <div className='flex items-center justify-between'>
+                    <button className='px-8 py-2 mt-4 mr-8'>Code</button>
+                    <Link href='/#projects'>
+                    <p className='underline cursor-pointer'>Back</p>
+                    </Link>
+
+                </div>
             </div>
 
             <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4'>
@@ -48,9 +54,7 @@ const autonbs = () => {
                     </div>
                 </div>
             </div>
-            <Link href='/#projects'>
-                <p className='underline cursor-pointer'>Back</p>
-            </Link>
+            
         </div>
     </div>
   )

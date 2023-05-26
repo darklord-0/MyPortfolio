@@ -2,6 +2,7 @@ import React from 'react'
 import { AiOutlineMail } from 'react-icons/ai'
 import { BsFillPersonFill } from 'react-icons/bs'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
+import styles from '../styles/Home.module.css'
 
 const Main = () => {
   return (
@@ -9,9 +10,17 @@ const Main = () => {
         <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
             <div>
                 <p className='uppercase tracking-widest text-smt text-gray-600'>Let's Build something together</p>
-                <h6 className='py-4 text-gray-700'>
-                    Hi, I'm <span className='text-[#5651e5]'>HS</span>
-                </h6>
+                
+                <h3 className={`py-4 text-gray-700`}>
+                <div className='flex'>
+                    <div className=' m-auto'>
+                        <p className={`${styles.typewriter}` }>
+                            Hi, I'm <span className='text-[#5651e5]'>HS</span>
+                        </p>
+                    </div>
+                </div>
+                </h3>
+                
                 <h6 className='py-2 text-gray-700'>
                     A Full-Stack Developer
                 </h6>

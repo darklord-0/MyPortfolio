@@ -5,13 +5,24 @@ import {AiOutlineClose,AiOutlineMail,AiOutlineMenu} from 'react-icons/ai'
 import {FaGithub, FaLinkedin} from 'react-icons/fa'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
 import { useRouter } from 'next/router'
+import Popup from './Popup'
 
 const Navbar = () => {
 
     const [nav,setNav] = useState(false)
     const [shadow, setShadow] = useState(false)
     const [navBg, setNavBg] = useState('#ecf0f3')
-    const [linkColor, setLinkColor] = useState('#1f2937')
+    const [linkColor, setLinkColor] = useState('#1f2937c')
+    const [showPopup, setShowPopup] = useState(false);
+
+    const handleOk = () => {
+      setShowPopup(false);
+    };
+    
+    const handleCancel = () => {
+        setShowPopup(false);
+    };
+
     
     const router = useRouter()
 
@@ -34,6 +45,10 @@ const Navbar = () => {
 
     const handleNav =() =>{
         setNav(!nav)
+    }
+
+    const handlePopUp = () => {
+        setShowPopup(!showPopup) 
     }
 
     useEffect(()=>{
@@ -65,9 +80,12 @@ const Navbar = () => {
                     <Link href='/#projects' >
                         <li className='ml-10 text-sm uppercase hover:border-b'> Projects</li>
                     </Link>
-                    <Link href='/' >
-                        <li className='ml-10 text-sm uppercase hover:border-b'> Contact</li>
-                    </Link>
+
+                    <a id='downloadresume' onClick={(handlePopUp)}>
+                        <li className='ml-10 text-sm uppercase hover:border-b'> My Resume</li>
+                    </a>
+                    { showPopup && (<Popup message="This is a custom pop-up message!" onOk={handleOk} onCancel={handleCancel} popupvisible={showPopup} />)}
+
                 </ul>
                 <div className='md:hidden hover:cursor-pointer' onClick={handleNav}>
                     <AiOutlineMenu size={25} />
@@ -107,9 +125,12 @@ const Navbar = () => {
                         <Link href='/#projects' >
                             <li className='py-4 text-sm' onClick={() => setNav(false)} > Projects</li>
                         </Link>
-                        <Link href='/' >
-                            <li className='py-4 text-sm'> Contact</li>
-                        </Link>
+                        
+                        <a id='downloadresume' onClick={(handlePopUp)}>
+                            <li className='py-4 text-sm uppercase hover:border-b'> My Resume</li>
+                        </a>
+                        { showPopup && (<Popup message="This is a custom pop-up message!" onOk={handleOk} onCancel={handleCancel} popupvisible={showPopup} />)}
+
                     </ul>
 
                     <div className='pt-40 '>
