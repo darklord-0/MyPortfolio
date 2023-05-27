@@ -1,16 +1,11 @@
 import About from '@/components/About'
 import Main from '@/components/Main'
-import Navbar from '@/components/Navbar'
-import ProjectList from '@/components/ProjectList'
 import Projects from '@/components/Projects'
 import Skills from '@/components/Skills'
-import { projectRoutes } from '@/projectRoutes'
+import { projectRoutes } from '@/components/projectRoutes'
 import Head from 'next/head'
-import Image from 'next/image'
 
-
-
-export default function Home({project}) {
+export default function Home({projects}) {
   return (
     <>
       <Head>
@@ -20,11 +15,10 @@ export default function Home({project}) {
         <link rel="icon" href="../public/favicon.ico" />
       </Head>
       
-    {/* <Main /> */}
-    <ProjectList projects={project} />
+    <Main />
     <About />
     <Skills />
-    <Projects />
+    <Projects projects={projects} />
     </>
   )
 }
@@ -32,11 +26,11 @@ export default function Home({project}) {
 
 export const  getStaticProps = () => {
 
-  const project = projectRoutes;
+  const projects = projectRoutes;
 
   return {
     props: {
-      project 
+      projects
     }
   };
 }

@@ -84,7 +84,7 @@ const Navbar = () => {
                     <a id='downloadresume' onClick={(handlePopUp)}>
                         <li className='ml-10 text-sm uppercase hover:border-b'> My Resume</li>
                     </a>
-                    { showPopup && (<Popup message="This is a custom pop-up message!" onOk={handleOk} onCancel={handleCancel} popupvisible={showPopup} />)}
+                    { showPopup && (<Popup message="Do you want to download my resume?" onOk={handleOk} onCancel={handleCancel} popupvisible={showPopup} />)}
 
                 </ul>
                 <div className='md:hidden hover:cursor-pointer' onClick={handleNav}>
@@ -129,7 +129,7 @@ const Navbar = () => {
                         <a id='downloadresume' onClick={(handlePopUp)}>
                             <li className='py-4 text-sm uppercase hover:border-b'> My Resume</li>
                         </a>
-                        { showPopup && (<Popup message="This is a custom pop-up message!" onOk={handleOk} onCancel={handleCancel} popupvisible={showPopup} />)}
+                        { showPopup && (<Popup message="Do you want to download my resume?" onOk={handleOk} onCancel={handleCancel} popupvisible={showPopup} />)}
 
                     </ul>
 
@@ -139,18 +139,24 @@ const Navbar = () => {
                         </p>
                         
                         <div className='flex items-center justify-around my-4 w-full sm:w-[80%]'>
-                            <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                                <FaLinkedin />
-                            </div>
-                            <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                                <FaGithub />
-                            </div>
-                            <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                                <AiOutlineMail />
-                            </div>
-                            <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                            <a href="https://www.linkedin.com/in/harshitsingh01010/" target='_blank'>
+                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                                    <FaLinkedin />
+                                </div>
+                            </a>
+                            <a href="https://github.com/darklord-0/" target='_blank'>
+                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                                    <FaGithub />
+                                </div>
+                            </a>
+                            <a href="mailto:singhharshit01010@gmail.com" target='_blank'>
+                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                                    <AiOutlineMail />
+                                </div>
+                            </a>
+                            {/* <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                                 <BsFillPersonLinesFill />
-                            </div>
+                            </div> */}
 
                         </div>
                     </div>

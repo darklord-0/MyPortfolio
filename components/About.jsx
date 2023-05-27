@@ -10,7 +10,9 @@ const About = () => {
                 <p className='py-2 text-gray-600'>
                   Fusce condimentum rutrum condimentum. Aliquam tristique rutrum tellus sed venenatis. Pellentesque eget velit sem. Vestibulum rutrum turpis a ex luctus, eget dictum felis placerat. Fusce ac ex a sem interdum tristique. Nulla facilisi. Nunc tempor dapibus est ut feugiat. 
                 </p>
-                <p className='py-2 text-gray-600 cursor-pointer underline'>Check out my latest projects</p>
+                <a href='/#projects'> 
+                  <p className='py-2 text-gray-600 cursor-pointer underline'>Check out my latest projects</p>
+                </a>
             </div>
             <div className='w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-2 hover:scale-105 ease-in-out duration-300'>
               <Image src="/../public/assets/pic2.jpg"  alt='/' width='400' height='100' className='rounded-xl'></Image>

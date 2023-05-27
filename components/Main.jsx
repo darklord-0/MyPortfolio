@@ -29,18 +29,24 @@ const Main = () => {
                 </p>
 
                 <div className='flex justify-between items-center max-w-[330px] m-auto py-4'>
-                    <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
-                        <FaLinkedin />
-                    </div>
-                    <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
-                        <FaGithub />
-                    </div>
-                    <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
-                        <AiOutlineMail />
-                    </div>
-                    <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
+                    <a href="https://www.linkedin.com/in/harshitsingh01010/" target='_blank'>
+                        <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
+                            <FaLinkedin />
+                        </div>
+                    </a>
+                    <a href="https://github.com/darklord-0/" target='_blank'>
+                        <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
+                            <FaGithub />
+                        </div>
+                    </a>
+                    <a href="mailto:singhharshit01010@gmail.com" target='_blank'>
+                        <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
+                            <AiOutlineMail />
+                        </div>
+                    </a>
+                    {/* <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
                         <BsFillPersonFill />
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

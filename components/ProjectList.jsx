@@ -4,13 +4,11 @@ const ProjectList = ({projects}) => {
   return (
     <div>
         
-    {
-    projects.map((p)=>{
+    { projects.map((p)=>{
       return (
-          <ProjectListItem project={p} />
+          <ProjectListItem key={p.slug} project={p} />
           )
-    })
-    }
+    })}
         
     {console.log("first",projects)}
     </div>
