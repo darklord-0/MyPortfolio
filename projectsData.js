@@ -1,4 +1,4 @@
-export const projectRoutes = [
+export const projectsData = [
     {
       id:1,
       name: 'Automated NLP based Search System for Files',
