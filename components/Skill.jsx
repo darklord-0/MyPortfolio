@@ -7,13 +7,13 @@ const Skill = ({skillName}) => {
   
   return (
     <div>
-        <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in-out duration-300'>
+        <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in-out duration-300 bg-[#4c879e]'>
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                 <div className='m-auto'>
-                    <Image src={`/../public/assets/skills/${skillimg}`} alt='/' width='70' height='70' />
+                    <Image src={`/../public/assets/skills/${skillimg}`} alt={`${skillName.toLowerCase()} icon`} width='70' height='70' />
                 </div>
 
-                <div className='flex flex-col items-center justify-center'>
+                <div className='flex flex-col text-lg items-center justify-center'>
                     <p>{skillName}</p>
                 </div>
             </div>

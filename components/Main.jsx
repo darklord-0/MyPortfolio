@@ -9,39 +9,39 @@ const Main = () => {
     <div id='home' className='h-screen w-full text-center'>
         <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
             <div>
-                <p className='uppercase tracking-widest text-smt text-gray-600'>Let's Build something together</p>
+                <p className='uppercase tracking-widest text-lg text-gray-900'>Let's Build something together</p>
                 
-                <h3 className={`py-4 text-gray-700`}>
+                <h2 className={`py-4 text-black-700`}>
                 <div className='flex'>
                     <div className=' m-auto'>
                         <p className={`${styles.typewriter}` }>
-                            Hi, I'm <span className='text-[#5651e5]'>HS</span>
+                            Hi, I'm <span className='text-[#2925ac]'>HARSHIT</span>
                         </p>
                     </div>
                 </div>
-                </h3>
+                </h2>
                 
-                <h6 className='py-2 text-gray-700'>
-                    A Full-Stack Developer
-                </h6>
-                <p className='py-4 text-gray-600 max-w-[70%] m-auto'>
+                <h3 className='py-2 text-xl tracking-wider text-gray-800'>
+                    Full-Stack Developer
+                </h3>
+                {/* <p className='py-4 text-gray-600 max-w-[70%] m-auto'>
                 Fusce condimentum rutrum condimentum. Aliquam tristique rutrum tellus sed venenatis. Pellentesque eget velit sem. Vestibulum rutrum turpis a ex luctus, eget dictum felis placerat. Fusce ac ex a sem interdum tristique. Nulla facilisi. Nunc tempor dapibus est ut feugiat. 
-                </p>
+                </p> */}
 
-                <div className='flex justify-between items-center max-w-[330px] m-auto py-4'>
+                <div className='flex justify-between items-center max-w-[330px] m-auto pt-6'>
                     <a href="https://www.linkedin.com/in/harshitsingh01010/" target='_blank'>
-                        <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
-                            <FaLinkedin />
+                        <div className='rounded-full shadow-lg shadow-blue-700 bg-[#4a8ea9] p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
+                            <FaLinkedin size={23} />
                         </div>
                     </a>
                     <a href="https://github.com/darklord-0/" target='_blank'>
-                        <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
-                            <FaGithub />
+                        <div className='rounded-full shadow-lg shadow-blue-700 bg-[#4a8ea9] p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
+                            <FaGithub size={23} />
                         </div>
                     </a>
                     <a href="mailto:singhharshit01010@gmail.com" target='_blank'>
-                        <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
-                            <AiOutlineMail />
+                        <div className='rounded-full shadow-lg shadow-blue-700 bg-[#4a8ea9] p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
+                            <AiOutlineMail size={23} />
                         </div>
                     </a>
                     {/* <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>

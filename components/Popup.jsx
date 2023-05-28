@@ -16,10 +16,9 @@ const Popup = ({ message, onOk, onCancel,popupvisible }) => {
   };
 
   const downloadFile = () => {
-    const fileUrl = '/file.pdf'
+    const fileUrl = '/HARSHIT_RESUME.pdf'
     const link = document.createElement('a');
     link.href = fileUrl;
-    // link.download = 'file.pdf';
     link.click();
   }
 
@@ -35,13 +34,13 @@ const Popup = ({ message, onOk, onCancel,popupvisible }) => {
           <div className="flex items-center justify-end rounded border-t-2 border-neutral-400 p-4 ">
             <button
               type="button"
-              className="inline-block text-white bg-neutral-800 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal"
+              className="inline-block text-white bg-neutral-800 px-6 pb-2 pt-2.5 text-base font-medium uppercase leading-normal"
               onClick={handleCancel}>
               Close
             </button>
             <button
               type="button"
-              className="ml-1 inline-block bg-neutral-800 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white"
+              className="ml-1 inline-block bg-neutral-800 px-6 pb-2 pt-2.5 text-base font-medium uppercase leading-normal text-white"
               onClick={handleOk}>
               Ok
             </button>
