@@ -17,23 +17,9 @@ export default function Home({projects}) {
 }
 
 
-// export const  getStaticProps = () => {
+export const  getStaticProps = () => {
 
-//   const projects = projectsData;
-
-//   return {
-//     props: {
-//       projects
-//     }
-//   };
-// }
-
-//USING OUR OWN API
-export const getStaticProps = async () => {
-  
-  const res = await fetch(`${server}/api/projects`)
-
-  const projects = await res.json()
+  const projects = projectsData;
 
   return {
     props: {
@@ -41,4 +27,18 @@ export const getStaticProps = async () => {
     }
   };
 }
+
+//USING OUR OWN API
+// export const getStaticProps = async () => {
+  
+//   const res = await fetch(`${server}/api/projects`)
+
+//   const projects = await res.json()
+
+//   return {
+//     props: {
+//       projects
+//     }
+//   };
+// }
 
