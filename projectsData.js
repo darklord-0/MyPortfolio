@@ -5,7 +5,7 @@ export const projectsData = [
       slug:'autonbs',
       description:`Automated NLP based Search System for Files (AutoNBS), an offline multimedia search system designed to fetch relevant files based on user input. AutoNBS utilizes content-based file retrieval techniques and takes into consideration the user's search history to provide personalized and relevant results.`,
       technologies:'Python,NLP,PyQt5',
-      image:'/../public/assets/projects/autonbs.png',
+      image:'/assets/projects/autonbs.png',
       url:'https://github.com/harsha0571/Automated_NLP_Based_Data_Handler'
     },
     {
@@ -14,7 +14,7 @@ export const projectsData = [
       slug:'grauth',
       description:`Visual-based authentication using correct sequence and pixel positions in images aiming to minimize storage issue and shoulder surfing.`,
       technologies:'React,JavaScript,Express,MongoDB,MaterialUI',
-      image:'/../public/assets/projects/grauth.jpg',
+      image:'/assets/projects/grauth.jpg',
       url:'https://github.com/AdityaRaj1440/SIH_GraphicalPassword'
     },
     {
@@ -23,7 +23,7 @@ export const projectsData = [
       slug:'anime',
       description:`An API that fetches data related to Anime, Web Novels, Manga, Music,etc. based on the searching/filtering done by the user. `,
       technologies:'React,JavaScript,Express,MySql',
-      image:'/../public/assets/projects/anime.jpg',
+      image:'/assets/projects/anime.jpg',
       url:'https://github.com/AdityaRaj1440/DB_miniproj'
     },
     {
@@ -32,7 +32,7 @@ export const projectsData = [
       slug:'chat',
       description:'A Simple Chat application where multiple user can exchange messages in real time.',
       technologies:'NodeJS,JavaScript',
-      image:'/../public/assets/projects/chat.png',
+      image:'/assets/projects/chat.png',
       url:'https://github.com/darklord-0/MyChat'
     }
   ];

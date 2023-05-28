@@ -1,6 +1,5 @@
 import React from 'react'
 import { AiOutlineMail } from 'react-icons/ai'
-import { BsFillPersonFill } from 'react-icons/bs'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import styles from '../styles/Home.module.css'
 
@@ -44,9 +43,6 @@ const Main = () => {
                             <AiOutlineMail size={23} />
                         </div>
                     </a>
-                    {/* <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
-                        <BsFillPersonFill />
-                    </div> */}
                 </div>
             </div>
         </div>

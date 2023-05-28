@@ -10,7 +10,6 @@ const Projects = ({projects}) => (
                 Projects
             </p>
             <div className='grid md:grid-cols-2 gap-8'>
-                {/* {console.log("projects",projects)} */}
 
                 {projects.map((project) => {
                     return (
