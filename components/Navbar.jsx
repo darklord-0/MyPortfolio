@@ -151,7 +151,7 @@ const Navbar = () => {
                                     <FaLinkedin size={25} />
                                 </div>
                             </a>
-                            <a href="https://github.com/darklord-0/" target='_blank'>
+                            <a href="https://github.com/harshit01010/" target='_blank'>
                                     <div className='rounded-full shadow-lg shadow-blue-700 bg-[#4a8ea9] p-3 cursor-pointer hover:scale-125 ease-in duration-300'>
                                     <FaGithub size={25} />
                                 </div>

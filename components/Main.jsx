@@ -37,7 +37,7 @@ const Main = () => {
                             <FaLinkedin size={23} />
                         </div>
                     </a>
-                    <a href="https://github.com/darklord-0/" target='_blank'>
+                    <a href="https://github.com/harshit01010/" target='_blank'>
                         <div className='rounded-full shadow-lg shadow-blue-700 bg-[#4a8ea9] p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
                             <FaGithub size={23} />
                         </div>

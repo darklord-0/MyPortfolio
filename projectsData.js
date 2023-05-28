@@ -33,6 +33,6 @@ export const projectsData = [
       description:'A Simple Chat application where multiple users can exchange messages in real time.',
       technologies:'NodeJS,JavaScript',
       image:'/assets/projects/chat.png',
-      url:'https://github.com/darklord-0/MyChat'
+      url:'https://github.com/harshit01010/MyChat'
     }
   ];
