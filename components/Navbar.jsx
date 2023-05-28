@@ -69,7 +69,7 @@ const Navbar = () => {
   return (
     <div style={{backgroundColor:`${navBg}`}} className={ shadow ? 'fixed w-full h-20 shadow-xl z-[100] ' : 'fixed w-full h-20 z-[100] '}>
         <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16 bg-[#517ead]'>
-            <Link href='/#home'>
+            <Link href='/' className='hover:animate-bounce '>
                 <Image src={logoimg}  alt='/' width='125' height='50' style={logostyle}></Image>
             </Link>
             
@@ -94,8 +94,8 @@ const Navbar = () => {
                     { showPopup && (<Popup message="Do you want to download my resume?" onOk={handleOk} onCancel={handleCancel} popupvisible={showPopup} />)}
 
                 </ul>
-                <div className='md:hidden hover:cursor-pointer' onClick={handleNav}>
-                    <AiOutlineMenu size={25} />
+                <div className='md:hidden hover:cursor-pointer mr-4 hover:scale-110' onClick={handleNav}>
+                    <AiOutlineMenu size={35} />
                 </div>
             </div>
         </div>
@@ -107,7 +107,7 @@ const Navbar = () => {
             }>
                 <div>
                     <div className='flex w-full justify-between items-center'>
-                        <Link href='/#home'>
+                        <Link href='/'onClick={() => setNav(false)} className='hover:animate-spin ' >
                             <Image src={logoimg}  alt='/' width='70' height='35' style={logostyle} />
                         </Link>
                         
@@ -141,11 +141,11 @@ const Navbar = () => {
                     </ul>
 
                     <div >
-                        <p className='uppercase tracking-widest pt-20 text-[#4b46eb] text-xl'>
-                            Let's Connect
+                        <p className='uppercase tracking-widest pt-20 text-[#4b46eb] text-2xl'>
+                            Let's Connect !
                         </p>
                         
-                        <div className='flex items-center justify-around my-4 w-full sm:w-[80%]'>
+                        <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
                             <a href="https://www.linkedin.com/in/harshitsingh01010/" target='_blank'>
                                     <div className='rounded-full shadow-lg shadow-blue-700 bg-[#4a8ea9] p-4 cursor-pointer hover:scale-125 ease-in duration-300'>
                                     <FaLinkedin size={25} />

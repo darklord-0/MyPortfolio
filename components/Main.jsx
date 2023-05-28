@@ -2,6 +2,7 @@ import React from 'react'
 import { AiOutlineMail } from 'react-icons/ai'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import styles from '../styles/Home.module.css'
+import Image from 'next/image'
 
 const Main = () => {
   return (
@@ -9,16 +10,19 @@ const Main = () => {
         <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
             <div>
                 <p className='uppercase tracking-widest text-lg text-gray-900'>Let's Build something together</p>
+                <div className='flex p-4 justify-center items-center'>
+                    <Image src="/assets/profile/profile.jpg"  alt='profile image' width='200' height='100' className='rounded-full mr-4' />
                 
-                <h2 className={`py-4 text-black-700`}>
-                <div className='flex'>
-                    <div className=' m-auto'>
-                        <p className={`${styles.typewriter}` }>
-                            Hi, I'm <span className='text-[#2925ac]'>HARSHIT</span>
-                        </p>
-                    </div>
+                    <h2 className={`py-4 text-black-700`}>
+                        <div className='flex'>
+                            <div className=' m-auto'>
+                                <p className={`${styles.typewriter}` }>
+                                    Hi, I'm <span className='text-[#2925ac]'>HARSHIT</span>
+                                </p>
+                            </div>
+                        </div>
+                    </h2>
                 </div>
-                </h2>
                 
                 <h3 className='py-2 text-xl tracking-wider text-gray-800'>
                     Full-Stack Developer

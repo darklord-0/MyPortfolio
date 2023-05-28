@@ -10,13 +10,13 @@ const About = () => {
             </div>
             <div className='col-span-2'>
                 <p className='uppercase text-2xl tracking-widest text-[#12085b] py-4'>About</p>
-                <p className='py-2 text-gray-900 text-lg'>
+                <p className='py-2 text-gray-900 text-lg font-mono'>
                   Hello there! &#128075;, I'm Harshit, an aspiring Full-Stack Web Developer with experience in MERN stack. I am also well-versed in programming languages like CPP, JavaScript, Python, Java.
                   I have worked on projects, both as individual and as part of a team. I am passionate about building beautiful and creative websites. 
                   I am confident to apply my skills effectively and contribute to the success of any project i am involved in. 
                 </p>
                 <a href='/#projects'> 
-                  <p className='py-2 text-blue-900 cursor-pointer underline'>Check out my latest projects</p>
+                  <p className='py-2 text-blue-900 cursor-pointer text-base underline'>Check out my latest projects</p>
                 </a>
             </div>
         </div>
